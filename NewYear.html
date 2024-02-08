@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Trà năm mới vui vẻ!</title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+
+    <link rel="shortcut icon" href="https://www.searchpng.com/wp-content/uploads/2018/12/Happy-New-Year-3D-text-715x715.png">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <meta property="og:image" content="https://becreative360.org/wp-content/uploads/2018/12/happy-new-year-full-hd-photo-happy-new-year-white-desktop-background-hd-wallpaper.jpg">
+    <meta property="og:title" content="Thư của Trà">
+    <meta property="og:description" content="Nhớ năm 2023">
+    
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open{
+            display: none;
+        }
+
+        .clova {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url(./image/2.jpg);
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+            width: 34vw;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+            border-radius: 8px;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox{
+                width: 300px;
+                padding: 20px;
+            }
+            .clova{
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .envelope{
+                margin: 150px auto 0px auto;
+            }
+            .ps{
+                font-size: 15px;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter(){
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        
+        function go_clova(){
+            alert('Yêu nè ');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">Mở thui em ui !</h2>
+    </div>
+    <div class="letter-open">
+        <div class="clova" onclick="go_clova()"></div>
+        <h1>Chúc mừng năm mới !</h1>
+        <div class="messagebox">
+            Chúc em và gia đình năm mới tràn đầy niềm vui, hạnh phúc và sức khỏe dồi dào, năm mới gặp thật nhiều may mắn, vạn sự như ý an khang thịnh vượng! 🎇 <br />
+            Chúc Trà luôn xinh đẹp, mạnh mẽ vững vàng trong cuộc sống 💪 <br />
+            Chúc em lúc nào cũng cười thật tươi vì lúc đó a thấy e đẹp nhất 🌺 <br />
+            Chúc em một năm mới bình an , tài giỏi , thành công ✨ <br />
+            Chúc em luôn dịu dàng , yêu đời , yêu anh 💖 <br />
+            CUối cùng cảm ơn em năm 2023 đã tới bên anh, luôn động viên anh lúc anh chán nản, giúp anh nhận ra những điểm còn chưa tốt, cảm ơn em luôn mang đến sự ngọt ngào. Mong rằng sang năm mới chúng mình cùng cố gắng hơn và luôn có nhau ♥️ <br />
+            <p class="ps">P.S. Yêu em nhiều!</p>
+            <p class="from">2024.1.1 từ hieu</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
